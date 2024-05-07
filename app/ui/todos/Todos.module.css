@@ -1,0 +1,15 @@
+.header {
+  font-family: fantasy;
+}
+
+.todos {
+  font-family: fantasy;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  gap: 4px;
+  /* border: 1px solid #ccc; */
+}

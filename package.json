@@ -1,0 +1,52 @@
+{
+  "name": "rtk-query-graphql-crud",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A \"play-by-ear\" exploration on RTK Query for wiring GraphQL-powered CRUD-operation",
+  "keywords": [
+    "rtkq crud",
+    "rtkq graphql",
+    "pragmatized pattern",
+    "next.js app",
+    "web craftmanship"
+  ],
+  "bugs": "https://github.com/dwiyatci/rtk-query-graphql-crud/issues",
+  "license": "SEE LICENSE IN ./LICENSE",
+  "author": "Glenn Dwiyatcita <gmd@email.com> (https://tiny.cc/dwiyatci)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwiyatci/rtk-query-graphql-crud.git"
+  },
+  "scripts": {
+    "install:clean": "pnpm clean && pnpm install",
+    "clean": "pnpm dlx rimraf node_modules",
+    "upgr": "pnpm upgrade --recursive --latest --interactive",
+    "format": "prettier --write \"{**/*,*}.{js,mjs,ts,jsx,tsx,json,html,css,less,scss,sass,graphql,gql,yaml,yml,md}\"",
+    "format:check": "prettier --list-different \"{**/*,*}.{js,mjs,ts,jsx,tsx,json,html,css,less,scss,sass,graphql,gql,yaml,yml,md}\"",
+    "cix": "pnpm install:clean",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "2.2.3",
+    "graphql-request": "6.1.0",
+    "immer": "10.1.1",
+    "next": "14.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "9.1.1",
+    "use-immer": "0.9.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "4.3.0",
+    "@types/node": "20.12.7",
+    "@types/react": "18.2.79",
+    "@types/react-dom": "18.2.25",
+    "prettier": "3.2.5",
+    "typescript": "5.4.5"
+  },
+  "volta": {
+    "node": "20.12.2"
+  }
+}
